@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" verbose="1">
+    <parameter name="environment" value="Staging"/>
+    <parameter name="users" value="admin"/>
+    <parameter name="setResultsOnTestRail" value="false"/>
+    <parameter name="autoProjectsName" value=""/>
+    <test name="Test1">
+        <parameter name="suiteFileNames" value="ContentAPI"/>
+        <classes>
+            <class name="Utilities.CreateTestNgSuite"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <parameter name="environment" value="Staging"/>
+    <parameter name="users" value="admin"/>
+    <parameter name="setResultsOnTestRail" value="false"/>
+    <parameter name="suiteFileName" value="ContentAPI"/>
+    <parameter name="autoProjectsName" value=""/>
+    <listeners>
+        <listener class-name="Utilities.TestNg.RetryListenerClass"/>
+    </listeners>
+    <test name="test1">
+        <parameter name="Testcase_s_no" value="2313"/>
+        <parameter name="TestRail" value="2313"/>
+        <parameter name="Testcase_desc"
+                   value="Authentication - Partner  User Login - POST : /rest/login/partnerUserLogin"/>
+        <classes>
+            <class name="AvHub.ContentAPI.Authentication.PartnerUserLoginTest"/>
+            <class name="AvHub.ContentAPI.Authentication.GetTokenTest"/>
+        </classes>
+    </test>
+    <test name="test2">
+        <parameter name="Testcase_s_no" value="2330"/>
+        <parameter name="TestRail" value="2330"/>
+        <parameter name="Testcase_desc"
+                   value="AircraftData - Customer Component Types -GET : /content/aircraft/customer/componentTypes"/>
+        <classes>
+            <class name="AvHub.ContentAPI.AircraftData.ComponentTypesTest"/>
+            <class name="AvHub.ResponseBodyValidationTest"/>
+        </classes>
+    </test>
+    <test name="test3">
+        <parameter name="Testcase_s_no" value="2331"/>
+        <parameter name="TestRail" value="2331"/>
+        <parameter name="Testcase_desc"
+                   value="AircraftData - Customer Manufactures -GET : /content/aircraft/customer/manufacturers"/>
+        <classes>
+            <class name="AvHub.ContentAPI.AircraftData.ManufacturesTest"/>
+            <class name="AvHub.ResponseBodyValidationTest"/>
+        </classes>
+    </test>
+    <test name="test4">
+        <parameter name="Testcase_s_no" value="2332"/>
+        <parameter name="TestRail" value="2332"/>
+        <parameter name="Testcase_desc"
+                   value="AircraftData - Customer Models - GET : /content/aircraft/customer/models"/>
+        <classes>
+            <class name="AvHub.ContentAPI.AircraftData.ModelsTest"/>
+            <class name="AvHub.ResponseBodyValidationTest"/>
+        </classes>
+    </test>
+    <test name="test5">
+        <parameter name="Testcase_s_no" value="2333"/>
+        <parameter name="TestRail" value="2333"/>
+        <parameter name="Testcase_desc"
+                   value="AircraftData - Customer PublicationTypes - GET : /content/aircraft/customer/publicationTypes"/>
+        <classes>
+            <class name="AvHub.ContentAPI.AircraftData.PublicationTypesTest"/>
+            <class name="AvHub.ResponseBodyValidationTest"/>
+        </classes>
+    </test>
+    <test name="test6">
+        <parameter name="Testcase_s_no" value="2334"/>
+        <parameter name="TestRail" value="2334"/>
+        <parameter name="Testcase_desc"
+                   value="AircraftEventData - Event By Published Date -GET : /content/aircraft/eventsbypublisheddate"/>
+        <classes>
+            <class name="AvHub.ContentAPI.AircraftEventData.EventsByPublishedDateTest"/>
+            <class name="AvHub.ResponseBodyValidationTest"/>
+        </classes>
+    </test>
+    <test name="test7">
+        <parameter name="Testcase_s_no" value="2335"/>
+        <parameter name="TestRail" value="2335"/>
+        <parameter name="Testcase_desc"
+                   value="AircraftEventData - Event By Effective Date - GET : /content/aircraft/eventsbyeffectivedate"/>
+        <classes>
+            <class name="AvHub.ContentAPI.AircraftEventData.EventsByEffectiveDateTest"/>
+            <class name="AvHub.ResponseBodyValidationTest"/>
+        </classes>
+    </test>
+    <test name="test8">
+        <parameter name="Testcase_s_no" value="2336"/>
+        <parameter name="TestRail" value="2336"/>
+        <parameter name="Testcase_desc"
+                   value="AircraftAvailability - isLicensed-GET : /content/aircraft/availability/isLicensed"/>
+        <classes>
+            <class name="AvHub.ContentAPI.AircraftAvailability.IsLicensedTest"/>
+            <class name="AvHub.ResponseBodyValidationTest"/>
+        </classes>
+    </test>
+    <test name="test9">
+        <parameter name="Testcase_s_no" value="2337"/>
+        <parameter name="TestRail" value="2337"/>
+        <parameter name="Testcase_desc"
+                   value="AircraftAvailability - isDataAvailable -GET : /content/aircraft/availability/isDataAvailable"/>
+        <classes>
+            <class name="AvHub.ContentAPI.AircraftAvailability.IsDataAvailableTest"/>
+            <class name="AvHub.ResponseBodyValidationTest"/>
+        </classes>
+    </test>
+    <test name="test10">
+        <parameter name="Testcase_s_no" value="2338"/>
+        <parameter name="TestRail" value="2338"/>
+        <parameter name="Testcase_desc"
+                   value="AircraftDocuments -Documents By Published Date - GET : /content/aircraft/documentsbypublisheddate"/>
+        <classes>
+            <class name="AvHub.ContentAPI.AircraftDocuments.DocumentsByPublishedDateTest"/>
+            <class name="AvHub.ResponseBodyValidationTest"/>
+        </classes>
+    </test>
+    <test name="test11">
+        <parameter name="Testcase_s_no" value="2339"/>
+        <parameter name="TestRail" value="2339"/>
+        <parameter name="Testcase_desc"
+                   value="AircraftDocuments - Documents By Effective Date - GET : /content/aircraft/documentsbyeffectivedate"/>
+        <classes>
+            <class name="AvHub.ContentAPI.AircraftDocuments.DocumentsByEffectiveDateTest"/>
+            <class name="AvHub.ResponseBodyValidationTest"/>
+        </classes>
+    </test>
+    <test name="test12">
+        <parameter name="Testcase_s_no" value="2340"/>
+        <parameter name="TestRail" value="2340"/>
+        <parameter name="Testcase_desc"
+                   value="AircraftEventData - Revisions By Published Date - GET : /content/aircraft/revisionsbypublisheddate"/>
+        <classes>
+            <class name="AvHub.ContentAPI.AircraftEventData.RevisionsByPublishedDateTest"/>
+            <class name="AvHub.ResponseBodyValidationTest"/>
+        </classes>
+    </test>
+    <test name="test13">
+        <parameter name="Testcase_s_no" value="2341"/>
+        <parameter name="TestRail" value="2341"/>
+        <parameter name="Testcase_desc"
+                   value="AircraftEventData - Revisions By Effective Date - GET : /content/aircraft/revisionsbyeffectivedate"/>
+        <classes>
+            <class name="AvHub.ContentAPI.AircraftEventData.RevisionsByEffectiveDateTest"/>
+            <class name="AvHub.ResponseBodyValidationTest"/>
+        </classes>
+    </test>
+    <test name="test14">
+        <parameter name="Testcase_s_no" value="4162"/>
+        <parameter name="TestRail" value="4162"/>
+        <parameter name="Testcase_desc"
+                   value="AircraftDocuments - Document Search - GET : /content/aircraft/documentsearch"/>
+        <classes>
+            <class name="AvHub.ContentAPI.AircraftDocuments.DocumentSearchTest"/>
+            <class name="AvHub.ResponseBodyValidationTest"/>
+        </classes>
+    </test>
+    <test name="test15">
+        <parameter name="Testcase_s_no" value="2342"/>
+        <parameter name="TestRail" value="2342"/>
+        <parameter name="Testcase_desc" value="Authentication Partner Login - POST : /rest/login/partnerLogin"/>
+        <classes>
+            <class name="AvHub.ContentAPI.Authentication.PartnerLoginTest"/>
+            <class name="AvHub.ContentAPI.Authentication.GetTokenTest"/>
+        </classes>
+    </test>
+    <test name="test16">
+        <parameter name="Testcase_s_no" value="2343"/>
+        <parameter name="TestRail" value="2343"/>
+        <parameter name="Testcase_desc"
+                   value="AircraftData Global Component Types - GET : /content/aircraft/global/componentTypes"/>
+        <classes>
+            <class name="AvHub.ContentAPI.AircraftData.ComponentTypesTest"/>
+            <class name="AvHub.ResponseBodyValidationTest"/>
+        </classes>
+    </test>
+    <test name="test17">
+        <parameter name="Testcase_s_no" value="2344"/>
+        <parameter name="TestRail" value="2344"/>
+        <parameter name="Testcase_desc"
+                   value="AircraftData Global Manufacures - GET : /content/aircraft/global/manufacturers"/>
+        <classes>
+            <class name="AvHub.ContentAPI.AircraftData.ManufacturesTest"/>
+            <class name="AvHub.ResponseBodyValidationTest"/>
+        </classes>
+    </test>
+    <test name="test18">
+        <parameter name="Testcase_s_no" value="2345"/>
+        <parameter name="TestRail" value="2345"/>
+        <parameter name="Testcase_desc" value="AircraftData Global Models- GET : /content/aircraft/global/models"/>
+        <classes>
+            <class name="AvHub.ContentAPI.AircraftData.ModelsTest"/>
+            <class name="AvHub.ResponseBodyValidationTest"/>
+        </classes>
+    </test>
+    <test name="test19">
+        <parameter name="Testcase_s_no" value="2346"/>
+        <parameter name="TestRail" value="2346"/>
+        <parameter name="Testcase_desc"
+                   value="AircraftData GlobalPublicationTypes-GET : /content/aircraft/global/publicationTypes"/>
+        <classes>
+            <class name="AvHub.ContentAPI.AircraftData.PublicationTypesTest"/>
+            <class name="AvHub.ResponseBodyValidationTest"/>
+        </classes>
+    </test>
+    <test name="test20">
+        <parameter name="Testcase_s_no" value="4163"/>
+        <parameter name="TestRail" value="4163"/>
+        <parameter name="Testcase_desc"
+                   value="AircraftData Global ManufacturesByName-GET : /content/aircraft/global/manufacturersbyname"/>
+        <classes>
+            <class name="AvHub.ContentAPI.AircraftData.ManufacturesByNameTest"/>
+            <class name="AvHub.ResponseBodyValidationTest"/>
+        </classes>
+    </test>
+    <test name="test21">
+        <parameter name="Testcase_s_no" value="4164"/>
+        <parameter name="TestRail" value="4164"/>
+        <parameter name="Testcase_desc"
+                   value="AircraftData Global ModelsByName-GET : /content/aircraft/global/modelsbyname"/>
+        <classes>
+            <class name="AvHub.ContentAPI.AircraftData.ModelsByNameTest"/>
+            <class name="AvHub.ResponseBodyValidationTest"/>
+        </classes>
+    </test>
+</suite>
